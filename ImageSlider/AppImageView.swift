@@ -12,7 +12,7 @@ class AppImageView: UIImageView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.layer.cornerRadius = 15.0
+        self.layer.cornerRadius = 12.0
         self.layer.borderColor = UIColor.black.cgColor
         self.layer.borderWidth = 5.0
         self.layer.masksToBounds = true
