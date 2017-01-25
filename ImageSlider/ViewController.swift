@@ -20,10 +20,18 @@ class ViewController: UIViewController {
     
     var dataModel = DataModel()
     var currentImage: String!
+    var totalValue : Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        totalValue = dataModel.images.count
+        
+        slider.minimumValue = 0
+        slider.maximumValue = Float(totalValue!)
         slider.isContinuous = false
+        
+        
         currentImage = dataModel.images[0]
         imageView.image = UIImage(named: currentImage)
     }
@@ -47,6 +55,9 @@ class ViewController: UIViewController {
     
     @IBAction func sliderAction(_ sender: UISlider) {
         print("Slider")
+        var sliderAction : String = String (Int(sender.value))
+        
+        
     }
     
 }

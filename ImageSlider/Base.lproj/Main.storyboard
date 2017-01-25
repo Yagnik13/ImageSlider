@@ -22,12 +22,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="D6r-R4-qeX">
-                                <rect key="frame" x="14" y="547" width="346" height="31"/>
-                                <connections>
-                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="EOb-wO-ixW"/>
-                                </connections>
-                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gvy-gO-MoM" customClass="AppImageView" customModule="ImageSlider" customModuleProvider="target">
+                                <rect key="frame" x="16" y="60" width="342" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Ttg-j0-0BE"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAX-Zc-5Ke">
                                 <rect key="frame" x="24" y="437" width="31" height="30"/>
                                 <state key="normal" title="Prev"/>
@@ -42,12 +42,12 @@
                                     <action selector="nextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K0l-hx-ysV"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gvy-gO-MoM" customClass="AppImageView" customModule="ImageSlider" customModuleProvider="target">
-                                <rect key="frame" x="16" y="60" width="342" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Ttg-j0-0BE"/>
-                                </constraints>
-                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="D6r-R4-qeX">
+                                <rect key="frame" x="14" y="547" width="346" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="EOb-wO-ixW"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

@@ -39,4 +39,13 @@ class DataModel: NSObject {
         return currentImage
     }
     
+    func setSliderValue(for currentImage: String) -> Int{
+        let total = images.count
+        var index = images.index(of: currentImage)
+        if currSlider == index
+        {
+            
+        }
+        return 1
+    }
 }
